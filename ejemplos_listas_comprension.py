@@ -24,6 +24,16 @@ palabras = ['python','listas','esdrujula','codigo']
 longitudes = [len(palabra) for palabra in palabras]
 print(longitudes)
 # Crear una lista de números del 1 al 100 que sean divisibles por 5 y 7.
+divisibles = [x for x in range(1,101) if x%5==0 and x%7==0]
+print(divisibles)
 # Reemplazar los espacios por guiones en una lista de frases.
+frases = ['Luis Fernando','Jose Pablo', 'Maria Jose', 'Elena Patricia', 'Alba Isabel']
+guiones = [frase.replace(' ','-') for frase in frases]
+print(guiones)
 # Crear una lista de booleanos que indiquen si los números del 1 al 10 son pares.
+pares = [x%2==0 for x in range(1,11)]
+print(pares)
 # Dada una lista de temperaturas en Celsius, convertirlas a Fahrenheit.
+celsius = [0,20,37,100]
+fahrenheit = [(temp * 9/5)+32 for temp in celsius]
+print(fahrenheit)
